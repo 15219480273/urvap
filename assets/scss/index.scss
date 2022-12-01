@@ -1,1 +1,27 @@
 @import './mixin.scss';
+.banner {
+    width: 100%;
+    height: transVwPc(929);
+    position: relative;
+    .swiper-slide {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    #bannerPagination {
+        width: auto;
+        left: unset;
+        bottom: transVwPc(80);
+        right: transVwPc(360);
+    }
+    .swiper-pagination-bullet {
+        width: transVwPc(100);
+        height: 2px;
+        background-color: #ffffff;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: var(--themeColor);
+    }
+}
