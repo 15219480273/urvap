@@ -284,7 +284,8 @@ body.hidden {
     height: 100vh;
     overflow: hidden;
 }
-.site_header{
+
+.site_header {
     width: 100%;
     height: transVwPc(100);
     display: flex;
@@ -294,47 +295,49 @@ body.hidden {
     z-index: 10;
     top: transVwPc(80);
     left: 0;
-    background-color: rgba(0,0,0,0.3);
-    .site_logo{
+    background-color: rgba(0, 0, 0, 0.3);
+    .site_logo {
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         opacity: 0.2;
-        img{
+        img {
             width: transVwPc(55);
         }
     }
-    .menu-item{
+    .menu-item {
         margin: 0 transVwPc(65);
-        a{
+        a {
             font-size: transVwPc(20);
             color: #c1c1c1;
             transition: all .3s ease-in-out;
             @include fontFmail('Light');
             text-transform: uppercase;
-            &:hover{
+            &:hover {
                 color: var(--themeColor);
             }
         }
     }
     #menu-header-menu-left,
-    #menu-header-menu-right{
+    #menu-header-menu-right {
         display: flex;
     }
-    #menu-header-menu-left{
+    #menu-header-menu-left {
         padding-right: transVwPc(184);
     }
-    #menu-header-menu-right{
+    #menu-header-menu-right {
         padding-left: transVwPc(184);
     }
 }
-.fixed_nav{
+
+.fixed_nav {
     position: fixed;
     top: 0;
     -webkit-animation: slide_in .5s forwards;
     animation: slide_in .5s forwards;
 }
+
 @-webkit-keyframes slide_in {
     from {
         top: - transVwPc(90)
@@ -549,6 +552,30 @@ body.hidden {
     }
     .pc_show {
         display: none;
+    }
+    .warning {
+        height: 55px;
+    }
+    .site_header {
+        height: transVwMobile(90);
+        top: 55px;
+        .site_logo {
+            img {
+                width: transVwMobile(60);
+            }
+        }
+        #menu-header-menu-left {
+            padding-right: transVwMobile(60);
+        }
+        #menu-header-menu-right {
+            padding-left: transVwMobile(60);
+        }
+        .menu-item {
+            margin: 0 transVwMobile(15);
+            a {
+                font-size: transVwMobile(26);
+            }
+        }
     }
 }
 
