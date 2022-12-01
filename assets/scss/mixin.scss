@@ -1,0 +1,26 @@
+@mixin fontFmail($type) {
+    @if $type=="Bold" {
+        font-family: "Poppins-Bold";
+    }
+    @else if $type=="Light" {
+        font-family: "Poppins-Light";
+    }
+    @else if $type=="Medium" {
+        font-family: "Poppins-Medium";
+    }
+    @else if $type=="Regular" {
+        font-family: "Poppins-Regular";
+    }
+    @else if $type=="SemiBold" {
+        font-family: "Poppins-SemiBold";
+    }
+    font-weight: normal;
+}
+
+@function transVwPc($px) {
+    @return unquote($px / 1920 * 100 + 'vw')
+}
+
+@function transVwMobile($px) {
+    @return unquote($px / 750 * 100 + 'vw')
+}
