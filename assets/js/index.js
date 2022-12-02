@@ -8,8 +8,7 @@ $(document).ready(function() {
 
     }
 
-    var swiper = new Swiper('#banner', {
-
+    var banner_swiper = new Swiper('#banner', {
         effect: 'fade',
         pagination: {
             el: '.swiper-pagination',
@@ -19,6 +18,35 @@ $(document).ready(function() {
         //     nextEl: '.swiper-button-next',
         //     prevEl: '.swiper-button-prev',
         // }
+    });
+    var thumbs = new Swiper(".swiper.thumbs", {
+        spaceBetween: 8,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+        loop: true,
+    });
+    var video_swiper = new Swiper('#video', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        watchSlidesProgress: true,
+        paginationClickable: true,
+        slidesPerView: 1.2,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: true,
+        thumbs: {
+            swiper: thumbs,
+        },
+    });
+    var news_swiper = new Swiper('#news', {
+        effect: 'slide',
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+
     });
 
     $(document.body).on("click", ".js-video[data-href]", function(event) {

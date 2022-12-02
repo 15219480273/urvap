@@ -1,1 +1,251 @@
-null
+body {
+  background-color: #151515;
+}
+
+.swiper-container {
+  overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  height: 48.38542vw;
+  position: relative;
+}
+
+.banner .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner #bannerPagination {
+  width: auto;
+  left: unset;
+  bottom: 4.16667vw;
+  right: 18.75vw;
+}
+
+.banner .swiper-pagination-bullet {
+  width: 5.20833vw;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.banner .swiper-pagination-bullet-active {
+  background-color: var(--themeColor);
+}
+
+.product_panel {
+  position: relative;
+}
+
+.product_panel .container {
+  max-width: 78.125vw;
+  padding: 5.20833vw 0;
+}
+
+.product_panel .pro_text {
+  background-color: var(--themeColor);
+  color: #ffffff;
+  padding: 7.13542vw 7.8125vw;
+}
+
+.product_panel .pro_text h2 {
+  font-size: 2.86458vw;
+  font-family: "Poppins-Bold";
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.product_panel .pro_text p {
+  font-size: 1.35417vw;
+  font-family: "Poppins-ExtraLight";
+  font-weight: normal;
+  line-height: 1.2;
+  margin-top: 0.52083vw;
+}
+
+.product_panel .pro_text a {
+  display: inline-block;
+  background-color: #151515;
+  text-align: center;
+  font-size: 1.04167vw;
+  font-family: "Poppins-Light";
+  font-weight: normal;
+  padding: 0 0.52083vw;
+  margin-top: 2.86458vw;
+}
+
+.product_panel .pro_potser {
+  width: 53.48958vw;
+  height: 18.48958vw;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title_panel {
+  text-align: center;
+  padding: 2.34375vw 0;
+}
+
+.title_panel h2 {
+  text-transform: uppercase;
+  font-size: 3.90625vw;
+  font-family: "Poppins-Bold";
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.title_panel h2 span {
+  color: var(--themeColor);
+}
+
+.video_panel .item {
+  position: relative;
+}
+
+.video_panel .item .poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video_panel .item .icon {
+  width: 3.38542vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.video_panel .video_text {
+  text-align: center;
+  color: #ffffff;
+  padding: 2.34375vw 0;
+}
+
+.video_panel .video_text h4 {
+  font-size: 1.35417vw;
+  font-family: "Poppins-Bold";
+  font-weight: normal;
+}
+
+.video_panel .video_text p {
+  font-size: 1.04167vw;
+  font-family: "Poppins-Light";
+  font-weight: normal;
+}
+
+.news_panel {
+  padding-bottom: 2.60417vw;
+}
+
+.news_panel .news_list {
+  position: relative;
+  width: 68.75vw;
+  margin: 0 auto;
+}
+
+.news_panel #news {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2.08333vw;
+  max-width: 62.5vw;
+}
+
+.news_panel .swiper-slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news_panel .swiper-button-next,
+.news_panel .swiper-button-prev {
+  width: 0.98958vw;
+  height: 4.53125vw;
+}
+
+.news_panel .swiper-button-next::after,
+.news_panel .swiper-button-prev::after {
+  background: url(/assets/images/next_icon.png) no-repeat;
+  color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.news_panel .swiper-button-prev {
+  left: -2.08333vw;
+}
+
+.news_panel .swiper-button-next {
+  transform: rotate(180deg);
+  right: -2.08333vw;
+}
+
+.news_panel .news_img img {
+  width: 37.5vw;
+  max-width: unset;
+}
+
+.news_panel .news_con {
+  padding: 0 0.52083vw 0 1.82292vw;
+  color: #ffffff;
+  position: relative;
+}
+
+.news_panel .news_con h4 {
+  padding: 1.5625vw 0;
+  font-size: 1.35417vw;
+  font-family: "Poppins-Bold";
+  font-weight: normal;
+}
+
+.news_panel .news_con p {
+  font-size: 1.04167vw;
+  font-family: "Poppins-ExtraLight";
+  font-weight: normal;
+}
+
+.news_panel .news_con a {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  bottom: 1.30208vw;
+  left: 1.82292vw;
+  color: #ffffff;
+  background-color: var(--themeColor);
+  padding: 0.46875vw 0.9375vw;
+  font-size: 1.04167vw;
+  font-family: "Poppins-Light";
+  font-weight: normal;
+}
+
+.kol_list {
+  max-width: 62.5vw;
+  margin: 2.60417vw auto;
+  display: flex;
+  justify-content: center;
+}
+
+.kol_list .left img {
+  width: 26.04167vw;
+  max-width: unset;
+}
+
+.kol_list .right {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.kol_list .right a {
+  width: 50%;
+}
+
+.kol_list .right img {
+  width: 100%;
+}
